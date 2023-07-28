@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.Buy {
+    color: rgb(250, 128, 149)
+}
+
+.div1 {
+    padding-top: 20px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchBar {
+    width: 500px;
+}
+
+.searchBar::placeholder {
+    padding-left: 10px;
+}
+
+.div3 {
+    display: flex;
+    gap: 100px;
+    align-items: center;    
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

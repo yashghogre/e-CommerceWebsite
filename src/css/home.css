@@ -1,0 +1,40 @@
+.shopByCategory {
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 17px;
+}
+
+.categoryCard {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.dropDown-menu {
+    position: relative;
+    top: 80px;
+    /* left: 1%; */
+    right: 88%;
+    background-color: rgb(226, 224, 224);
+    padding: 10px;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.dealsDiv {
+    margin-top: 20px;
+}
+
+.dealsText {
+    font-size: 22px;
+    margin-left: 80px;
+}

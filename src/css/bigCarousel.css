@@ -1,0 +1,19 @@
+.mainDiv {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 80px;
+    /* height: 400px; */
+}
+
+.mainSlide {
+ height: 100px;   
+ width: 700px;
+ text-align: center;
+}
+
+.cardImage {
+    width: 450px;
+    /* height: 500px; */
+    aspect-ratio: 1.67;
+}
