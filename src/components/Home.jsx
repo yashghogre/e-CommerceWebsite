@@ -28,7 +28,6 @@ const Home = () => {
             </div>
             <div>
                 <BigCarousel />
-                <h1>hiii</h1>
             </div>
                 {/* <div className="dealsDiv">
                 <h3 className='dealsText'>Today's Deals</h3>
