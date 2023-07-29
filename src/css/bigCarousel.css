@@ -17,3 +17,7 @@
     /* height: 500px; */
     aspect-ratio: 1.67;
 }
+
+.carousel-container {
+    width: 100%;
+}

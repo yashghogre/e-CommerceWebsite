@@ -29,10 +29,6 @@ const Home = () => {
             <div>
                 <BigCarousel />
             </div>
-                {/* <div className="dealsDiv">
-                <h3 className='dealsText'>Today's Deals</h3>
-                <TodayDeals />
-            </div>  */}
         </div>
     );
 }

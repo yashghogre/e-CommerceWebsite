@@ -9,7 +9,6 @@ import './../css/bigCarousel.css';
 const BigCarousel = () => {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -33,7 +32,9 @@ const BigCarousel = () => {
                 draggable={true}
                 autoPlay={true}
                 rewind={true}
-                rewindWithAnimation={true}>
+                rewindWithAnimation={true}
+                containerClass="carousel-container"
+                itemClass="carousel-item">
                 <div className='card'>
                     <img className='cardImage' src="https://images.unsplash.com/photo-1561715276-a2d087060f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2hvcHBpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt='image1' />
                 </div>
