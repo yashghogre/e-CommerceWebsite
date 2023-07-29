@@ -22,7 +22,7 @@ const Home = () => {
             <p className='shopByCategory'>Shop By Category:</p>
             <div className="categoryCard">
                 {category.map((data) => {
-                    return <p onClick={() => { setOpen(!open) }}>{data}</p>
+                    return <p className='categoryData' onClick={() => { setOpen(!open) }}>{data}</p>
                 })}
                 <p className={`dropDown-menu ${open ? 'active' : 'inactive'}`}>Product</p>
             </div>

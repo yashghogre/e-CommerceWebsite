@@ -13,6 +13,10 @@
     cursor: pointer;
 }
 
+.categoryData:hover {
+    color: rgb(250, 128, 149)
+}
+
 .dropDown-menu {
     position: relative;
     top: 80px;
