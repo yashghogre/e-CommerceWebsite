@@ -27,6 +27,7 @@ const TodayDeals = () => {
 
     return (
         <div>
+            <h2 className='dealsText'>Deal of the Day</h2>
             <Carousel responsive={responsive}>
                 <div>Item 1</div>
                 <div>Item 2</div>

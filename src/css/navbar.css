@@ -23,9 +23,7 @@
 .searchBar {
     width: 500px;
     border: none;
-}
-
-.searchBar::placeholder {
+    outline: none;
     padding-left: 10px;
 }
 

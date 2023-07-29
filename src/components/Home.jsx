@@ -29,6 +29,9 @@ const Home = () => {
             <div>
                 <BigCarousel />
             </div>
+            <div className='dealsDiv'>
+                <TodayDeals />
+            </div>
         </div>
     );
 }

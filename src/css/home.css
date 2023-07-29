@@ -11,10 +11,19 @@
     display: flex;
     justify-content: space-evenly;
     cursor: pointer;
+    /* border: solid 1px black; */
+}
+
+.categoryData {
+    /* border: solid 1px black; */
+    /* width: 10%;
+    text-align: center; */
+    transition: font-size 0.5s;
 }
 
 .categoryData:hover {
-    color: rgb(250, 128, 149)
+    color: rgb(250, 128, 149);
+    font-size: 17px;
 }
 
 .dropDown-menu {
@@ -35,10 +44,10 @@
 }
 
 .dealsDiv {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 70px;
 }
 
 .dealsText {
-    font-size: 22px;
-    margin-left: 80px;
+    margin-bottom: 30px;
 }
