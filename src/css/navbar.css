@@ -38,3 +38,10 @@
     text-decoration: none;
     color: black;
 }
+
+.iconsDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import './../css/navbar.css';
 import { Link } from 'react-router-dom';
+import { UserCircle2, MoreHorizontal, ShoppingCart } from 'lucide-react';
 
 const Navbar = () => {
 
@@ -10,9 +11,18 @@ const Navbar = () => {
                 <h1><span className='Buy'>Buy</span>It.com</h1>
                 <input className='searchBar' placeholder='Search for products...' />
                 <div className='div3'>
-                    <Link className='link' to='/' >My Account</Link>
-                    <Link className='link' to='/' >More</Link>
-                    <Link className='link' to='/' >My Cart</Link>
+                    <div className='iconsDiv'>
+                        <UserCircle2 />
+                        <Link className='link' to='/' >My Account</Link>
+                    </div>
+                    <div className='iconsDiv'>
+                        <MoreHorizontal />
+                        <Link className='link' to='/' >More</Link>
+                    </div>
+                    <div className='iconsDiv'>
+                        <ShoppingCart />
+                        <Link className='link' to='/' >My Cart</Link>
+                    </div>
                 </div>
             </div>
 
