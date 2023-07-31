@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './../css/todayDeals.css';
 import DealCard from './DealCard';
+import DealData from './DealData';
 import iphone from './../images/todayDealsImages/iphone.png';
 import sGalaxy from './../images/todayDealsImages/sGalaxy.png';
 import macbook from './../images/todayDealsImages/macbook.png';
@@ -30,6 +31,18 @@ const TodayDeals = () => {
         }
     };
 
+    const dealDCard = (val, index) => {
+        return (
+            <div>
+                <DealCard
+                    image={val.image}
+                    name={val.name}
+                    price={val.price}
+                    index={index}
+                />
+            </div>
+        );
+    }
 
 
     return (
@@ -38,55 +51,7 @@ const TodayDeals = () => {
             <Carousel responsive={responsive}
                 swipeable={false}
                 draggable={false}>
-                <div>
-                    <DealCard
-                        image={iphone}
-                        name='Apple iPhone 14'
-                        price='₹1,19,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={sGalaxy}
-                        name='Samsung Galaxy S23'
-                        price='₹1,09,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={macbook}
-                        name='Apple Macbook Pro'
-                        price='₹1,49,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={oneplus}
-                        name='OnePlus Nord 2'
-                        price='₹23,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={mac}
-                        name='Apple iMac'
-                        price='₹1,33,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={luffy}
-                        name='Luffy Gear 5 Action Figure'
-                        price='₹10,999'
-                    />
-                </div>
-                <div>
-                    <DealCard
-                        image={luffy}
-                        name='Luffy Gear 5 Action Figure'
-                        price='₹10,999'
-                    />
-                </div>
+                {DealData.map(dealDCard)}
             </Carousel>
         </div>
     );
