@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Errorpage from './components/Errorpage';
 import Home from './components/Home';
+import Cart from './components/Cart';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='*' element = {<Errorpage />} />
           <Route path='/' element = {<Home />} />
           <Route path='/home' element = {<Home />} />
+          <Route path='/cart' element = {<Cart />} />
         </Routes>
       </>
     )

@@ -8,7 +8,9 @@ const Navbar = () => {
     return (
         <div className='div1'>
             <div className='div2'>
-                <h1><span className='Buy'>Buy</span>It.com</h1>
+                <Link className='logoLink' to='/'>
+                    <h1 className='mainText'><span className='Buy'>Buy</span>It.com</h1>
+                </Link>
                 <div className='searchDiv'>
                     <input className='searchBar' placeholder='Search for products...' />
                     <Search className='searchBtn' />
@@ -24,7 +26,7 @@ const Navbar = () => {
                     </div>
                     <div className='iconsDiv'>
                         <ShoppingCart />
-                        <Link className='link' to='/' >My Cart</Link>
+                        <Link className='link' to='/cart' >My Cart</Link>
                     </div>
                 </div>
             </div>

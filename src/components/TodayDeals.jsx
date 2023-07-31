@@ -37,8 +37,7 @@ const TodayDeals = () => {
             <h2 className='dealsText'>Deals of the Day</h2>
             <Carousel responsive={responsive}
                 swipeable={false}
-                draggable={false}
-                focusOnSelect={true}>
+                draggable={false}>
                 <div>
                     <DealCard
                         image={iphone}
