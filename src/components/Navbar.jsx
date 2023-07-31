@@ -24,10 +24,12 @@ const Navbar = () => {
                         <MoreHorizontal />
                         <Link className='link' to='/' >More</Link>
                     </div>
-                    <div className='iconsDiv'>
-                        <ShoppingCart />
-                        <Link className='link' to='/cart' >My Cart</Link>
-                    </div>
+                    <Link className='link' to='/cart' >
+                        <div className='iconsDiv'>
+                            <ShoppingCart />
+                            My Cart
+                        </div>
+                    </Link>
                 </div>
             </div>
 
