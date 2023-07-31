@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import './../css/home.css'
 import BigCarousel from './BigCarousel';
 import TodayDeals from './TodayDeals';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
 

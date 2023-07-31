@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import iphone from './../images/todayDealsImages/iphone.png';
 import './../css/dealCard.css';
-
+import toast, { Toaster } from 'react-hot-toast';
 
 function DealCard(props) {
 

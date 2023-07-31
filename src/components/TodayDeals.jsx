@@ -41,8 +41,8 @@ const TodayDeals = () => {
                 <div>
                     <DealCard
                         image={iphone}
-                        name='Apple iPhone 13'
-                        price='₹79,999'
+                        name='Apple iPhone 14'
+                        price='₹1,19,999'
                     />
                 </div>
                 <div>
