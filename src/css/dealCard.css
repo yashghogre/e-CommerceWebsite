@@ -1,0 +1,21 @@
+.image {
+    height: 250px;
+}
+
+.name {
+    margin-bottom: 10px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.atcButton {
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(253, 201, 209);
+}
