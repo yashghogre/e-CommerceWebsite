@@ -9,19 +9,17 @@ function DealCard(props) {
     const [btnText, setBtnText] = useState('Add to Cart');
 
 
-    const atcBtn = (e) => {
+    const atcBtn = () => {
         setBtnText('Added to Cart!');
-        let btnValue = e.target.value;
+        // let btnValue = e.target.value;
     }
 
     return (
         <div>
-            {/* <btnIndex.Provider value={btnValue}> */}
-                <img className='image' src={props.image} />
-                <h3 className='name'>{props.name}</h3>
-                <p className='price'>{props.price}</p>
-                <button className='atcButton' onClick={atcBtn} value={props.index} >{btnText}</button>
-            {/* </btnIndex.Provider> */}
+            <img className='image' src={props.image} />
+            <h3 className='name'>{props.name}</h3>
+            <p className='price'>{props.price}</p>
+            <button className='atcButton' onClick={atcBtn} value={props.index} >{btnText}</button>
         </div>
     );
 }

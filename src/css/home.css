@@ -18,12 +18,13 @@
     /* border: solid 1px black; */
     /* width: 10%;
     text-align: center; */
-    transition: font-size 0.5s;
+    transition: transform 0.5s;
 }
 
 .categoryData:hover {
     color: rgb(250, 128, 149);
-    font-size: 17px;
+    /* font-size: 17px; */
+    transform: translateY(-5px);
 }
 
 .dropDown-menu {

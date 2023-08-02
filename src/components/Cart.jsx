@@ -1,16 +1,11 @@
 import React, { useContext } from 'react';
 import Navbar from './Navbar';
 import './../css/cart.css';
-import { btnIndex } from './DealCard';
-import DealData from './DealData';
 
 function Cart() {
 
-    const dealIndex = useContext(btnIndex);
 
-    // let cartArr = [];
-
-    // cartArr = [...cartArr, DealData[dealIndex]];
+    let cartArr = [];
 
     return (
         <div>

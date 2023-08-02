@@ -4,12 +4,6 @@ import "react-multi-carousel/lib/styles.css";
 import './../css/todayDeals.css';
 import DealCard from './DealCard';
 import DealData from './DealData';
-import iphone from './../images/todayDealsImages/iphone.png';
-import sGalaxy from './../images/todayDealsImages/sGalaxy.png';
-import macbook from './../images/todayDealsImages/macbook.png';
-import oneplus from './../images/todayDealsImages/oneplus.png';
-import mac from './../images/todayDealsImages/mac.png';
-import luffy from './../images/todayDealsImages/luffy.png';
 
 const TodayDeals = () => {
 
@@ -17,17 +11,17 @@ const TodayDeals = () => {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 5,
-            slidesToSlide: 3 // optional, default to 1.
+            slidesToSlide: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
             items: 2,
-            slidesToSlide: 2 // optional, default to 1.
+            slidesToSlide: 2
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
             items: 1,
-            slidesToSlide: 1 // optional, default to 1.
+            slidesToSlide: 1
         }
     };
 
