@@ -2,3 +2,94 @@
     margin-left: 70px;
     margin-top: 50px;
 }
+
+.headingText {
+    font-size: 22px;
+}
+
+.cartItem {
+    margin-top: 20px;
+}
+
+.cartItemCount {
+    font-weight: bolder;
+}
+
+.cardItemImage {
+    height: 100px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    background-color: aliceblue;
+    padding-top: 50px;
+    padding-left: 20px;
+    border-radius: 30px;
+    /* overflow-y: scroll; */
+    height: 500px;
+}
+
+.itemDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleNameText {
+    font-size: 20px;
+}
+
+.amountInput {
+    text-align: center;
+    height: 20px;
+    width: 50px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fas {
+    cursor: pointer;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.cartTotal {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+.subCartTotal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartTotalPrice {
+    font-weight: bold;
+}
+
+.checkoutButton {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /* width: 50px; */
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}

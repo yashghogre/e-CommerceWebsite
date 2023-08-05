@@ -1,17 +1,13 @@
-import React, { createContext, useState } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+import React, { useState } from 'react';
 import './../css/dealCard.css';
 
-// const btnIndex = createContext();
-
 function DealCard(props) {
-
     const [btnText, setBtnText] = useState('Add to Cart');
 
-
-    const atcBtn = () => {
+    const atcBtn = (e) => {
         setBtnText('Added to Cart!');
-        // let btnValue = e.target.value;
+        console.log(props.index);
+        console.log(props.name);
     }
 
     return (
@@ -25,4 +21,3 @@ function DealCard(props) {
 }
 
 export default DealCard;
-// export { btnIndex };

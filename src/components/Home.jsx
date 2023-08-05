@@ -4,6 +4,8 @@ import './../css/home.css'
 import BigCarousel from './BigCarousel';
 import TodayDeals from './TodayDeals';
 import toast, { Toaster } from 'react-hot-toast';
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Home = () => {
 
@@ -20,6 +22,7 @@ const Home = () => {
     return (
         <div>
             <Navbar />
+            {/* <Skeleton count={5} /> */}
             <p className='shopByCategory'>Shop By Category:</p>
             <div className="categoryCard">
                 {category.map((data) => {
