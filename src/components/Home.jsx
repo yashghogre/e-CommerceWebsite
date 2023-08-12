@@ -36,6 +36,9 @@ const Home = () => {
             <div className='dealsDiv'>
                 <TodayDeals />
             </div>
+            <div className='footer'>
+                <p className='footerText'>Made by <a  href='https://bio.link/yashghogre' className='footerLink'>Yash Ghogre</a></p>
+            </div>
         </div>
     );
 }

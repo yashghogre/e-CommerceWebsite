@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react';
+// import { productContext } from './DealCard';
+import DealData from './DealData';
 
 const CartItem = () => {
+
+    // const cartProductIndex = useContext(productContext);
+    // console.log(cartProductIndex);
+
     return (
         <div>
             <div className='itemDiv'>
@@ -22,8 +28,9 @@ const CartItem = () => {
                     <i className='fas fa-trash-alt' ></i>
                 </div>
             </div>
+            {/* <h1>{cartProductIndex}</h1> */}
         </div>
     )
 }
 
-export default CartItem
+export default CartItem;
