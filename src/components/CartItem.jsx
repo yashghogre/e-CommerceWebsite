@@ -1,11 +1,14 @@
 import React, { useContext } from 'react';
 // import { productContext } from './DealCard';
 import DealData from './DealData';
+import { CartContext } from './Cart';
 
 const CartItem = () => {
 
     // const cartProductIndex = useContext(productContext);
     // console.log(cartProductIndex);
+
+    const item = useContext(CartContext);
 
     return (
         <div>
