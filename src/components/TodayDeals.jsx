@@ -32,6 +32,7 @@ const TodayDeals = () => {
                     image={val.image}
                     name={val.name}
                     price={val.price}
+                    key={index}
                     index={index}
                 />
             </div>
@@ -45,7 +46,7 @@ const TodayDeals = () => {
             <Carousel responsive={responsive}
                 swipeable={false}
                 draggable={false}>
-                {DealData.map(dealDCard)}
+                {DealData.map((value, index) => { return (dealDCard(value, index)) })}
             </Carousel>
         </div>
     );

@@ -13,20 +13,13 @@ const Home = () => {
 
     const category = ["Grocery", "Mobiles", "Fashion", "Home & Furniture", "Appliances", "Travel", "Top Offers", "Beauty", "Toys & More", "Two Wheelers"];
 
-    // const dropDownItem = (props) => {
-    //     return(
-    //         <p>props.text</p>
-    //     )
-    // }
-
     return (
         <div>
             <Navbar />
-            {/* <Skeleton count={5} /> */}
             <p className='shopByCategory'>Shop By Category:</p>
             <div className="categoryCard">
-                {category.map((data) => {
-                    return <p className='categoryData' onClick={() => { setOpen(!open) }}>{data}</p>
+                {category.map((data, index) => {
+                    return <p key={index} className='categoryData' onClick={() => { setOpen(!open) }}>{data}</p>
                 })}
                 <p className={`dropDown-menu ${open ? 'active' : 'inactive'}`}>Product</p>
             </div>

@@ -1,23 +1,16 @@
-import React, { useContext } from 'react';
-// import { productContext } from './DealCard';
+import React from 'react';
 import DealData from './DealData';
-import { CartContext } from './Cart';
 
-const CartItem = () => {
-
-    // const cartProductIndex = useContext(productContext);
-    // console.log(cartProductIndex);
-
-    const item = useContext(CartContext);
+const CartItem = (props) => {
 
     return (
         <div>
             <div className='itemDiv'>
                 <div>
-                    <img className='cardItemImage' src='https://www.pngmart.com/files/22/iPhone-14-PNG-Transparent.png' alt='iphone' />
+                    <img className='cardItemImage' src={props.image} alt='iphone' />
                 </div>
                 <div>
-                    <h2 className='titleNameText'>Apple iPhone 14</h2>
+                    <h2 className='titleNameText'>{props.name}</h2>
                 </div>
                 <div>
                     <i className='fas fa-minus'></i>
@@ -25,13 +18,12 @@ const CartItem = () => {
                     <i className='fas fa-plus'></i>
                 </div>
                 <div>
-                    <h3 className='price'>₹1,19,999</h3>
+                    <h3 className='price'>{props.price}</h3>
                 </div>
                 <div>
                     <i className='fas fa-trash-alt' ></i>
                 </div>
             </div>
-            {/* <h1>{cartProductIndex}</h1> */}
         </div>
     )
 }

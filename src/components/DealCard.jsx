@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react';
+import React from 'react';
 import './../css/dealCard.css';
 import { useCart } from 'react-use-cart';
-
-export const productContext = createContext();
+import { useDispatch } from 'react-redux';
+import { addData } from '../actions';
 
 function DealCard(props) {
     // const [btnText, setBtnText] = useState('Add to Cart');
@@ -13,16 +13,25 @@ function DealCard(props) {
     //     console.log(props.name);
     // }
 
+    const dispatch = useDispatch()
+
+    function addDataToCart(){
+        dispatch(addData({
+            index: props.index,
+            image: props.image,
+            name: props.name,
+            price: props.price
+        }));
+    }
+
     const { addItem } = useCart();
 
     return (
         <div>
-            <productContext.Provider value={props.index}>
                 <img className='image' src={props.image} />
                 <h3 className='name'>{props.name}</h3>
                 <p className='price'>{props.price}</p>
-                <button className='atcButton' onClick={()=> addItem(props)} value={props.index} >Add to Cart</button>
-            </productContext.Provider>
+                <button className='atcButton' onClick={addDataToCart} value={props.index} >Add to Cart</button>
         </div>
     );
 }
