@@ -3,7 +3,6 @@ import Navbar from './Navbar';
 import './../css/cart.css';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import CartItem from './CartItem';
-import DealData from './DealData';
 import { useSelector } from 'react-redux';
 
 function Cart() {

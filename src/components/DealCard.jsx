@@ -1,6 +1,5 @@
 import React from 'react';
 import './../css/dealCard.css';
-import { useCart } from 'react-use-cart';
 import { useDispatch } from 'react-redux';
 import { addData } from '../actions';
 
@@ -15,7 +14,7 @@ function DealCard(props) {
 
     const dispatch = useDispatch()
 
-    function addDataToCart(){
+    function addDataToCart() {
         dispatch(addData({
             index: props.index,
             image: props.image,
@@ -24,14 +23,12 @@ function DealCard(props) {
         }));
     }
 
-    const { addItem } = useCart();
-
     return (
         <div>
-                <img className='image' src={props.image} />
-                <h3 className='name'>{props.name}</h3>
-                <p className='price'>{props.price}</p>
-                <button className='atcButton' onClick={addDataToCart} value={props.index} >Add to Cart</button>
+            <img className='image' src={props.image} />
+            <h3 className='name'>{props.name}</h3>
+            <p className='price'>{props.price}</p>
+            <button className='atcButton' onClick={addDataToCart} value={props.index} >Add to Cart</button>
         </div>
     );
 }

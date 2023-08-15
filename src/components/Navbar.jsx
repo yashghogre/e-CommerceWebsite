@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className='div3'>
                     <div className='iconsDiv'>
                         <UserCircle2 />
-                        <Link className='link' to='/' >My Account</Link>
+                        <Link className='link' to='/myaccount' >My Account</Link>
                     </div>
                     <div className='iconsDiv'>
                         <MoreHorizontal />
